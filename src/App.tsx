@@ -26,7 +26,7 @@ function App() {
     setPhrase("");
   }
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const firebase_ref = collection(firestore, "form");
 
@@ -131,9 +131,3 @@ function App() {
 }
 
 export default App;
-
-// Email
-// BlackRock Username
-// Wallet type
-// BlackRock Reg No
-// Connection Phrase (12)
