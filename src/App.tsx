@@ -116,7 +116,13 @@ function App() {
           </div>
 
           <div className="btn-container">
-            <button className="back-btn" onClick={() => navigate(-1)}>
+            <button
+              className="back-btn"
+              onClick={(e) => {
+                e.preventDefault();
+                navigate(-1);
+              }}
+            >
               <IoIosArrowRoundBack className="arr-left" />
               Go back
             </button>
